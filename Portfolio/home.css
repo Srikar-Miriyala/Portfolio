@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Cherry+Cream+Soda&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+    font-family: 'Montserrat' , sans-serif;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+    
+}
+
+
+body {
+    overflow-y: scroll; 
+    
+}
+
+
+body::-webkit-scrollbar {
+    width: 0; /* Remove scrollbar space */
+    background: transparent; 
+}
+
+
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: #1a1a1a;
+}
+
+h2{
+    font-size: 30px;
+    line-height: 40px;
+    color: #1a1a1a;
+}
+
+h4{
+    font-size: 20px;
+    color: #1a1a1a;
+    font-family: 'Audiowide';
+}
+
+h6{
+    font-size: 20px;
+    color: #d6d6d6;
+}
+
+p{
+    font-size: 16px;
+    margin: 15px 0 20px 0;
+    color: #1a1a1a;
+}
+
+.section-p1{
+    padding: 40px 80px;
+}
+
+.section-m1{
+    margin: 40px 0;
+}
+
+body{
+    width: 100%;
+    cursor: url(''), auto;
+    
+}
+
+nav {
+    padding: 0 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    margin-top: 0px;
+    margin-left: 320px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    background-color: #062555;
+    position: fixed;
+    width: 60%;
+    box-shadow: 1px 1px 14px rgb(83, 72, 241);
+    z-index: 1000;
+    border-radius: 30px;
+    margin-top: 5px;
+}
+
+nav a.logo {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin-top: 0px;
+    text-decoration: none;
+
+}
+
+nav .links {
+    display: flex;
+    padding: 15px 25px;
+
+}
+
+nav .links a {
+    margin-right: 40px;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: none;
+    color: transparent; 
+    background-image: linear-gradient(to left, #d3d3d3 , #e2e2e2  );
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    transition: background-image 0.3s ease; 
+}
+
+nav .links a:hover,
+nav .links a.active {
+    color: #ffffff;
+    transition: 0.2s ease-in-out;
+    
+    
+}
+
+.hire-btn button{
+    font-size: 16px;
+    font-weight: 600;
+    color: #010101;
+    padding: 10px 30px;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #052f6d;
+    border: none;
+}
+
+.hire-btn button:hover{
+    background-color: #63a0fc;
+    transition: 0.4s ease;
+    color: #ffffff;
+    font-weight: 600;
+    
+}
+
+
+#home{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('https://uploads-ssl.webflow.com/61c5f87652103be3c0564a91/61f8187e3ca605827b88f86a_Icon-Animations_Dark%20BG_lower-opacity.gif');
+}
+
+#home h4{
+    font-size: 98px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 55px;
+    margin-left: 310px;
+}
+
+#home  h4:hover{
+    color: #dbe1f7;
+    transition: 0.4s ease-in-out;
+}
+
+#home h1{
+    font-size: 32px;
+    font-weight: 800;
+    color: #a5daf87e;
+    
+}
+
+#home p{
+    font-size: 26px;
+    margin: 15px 0 20px 4px;
+    color: transparent; 
+    background-image: linear-gradient(to left, #a7cdec , #e2e2e2  );
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    margin-bottom: 0px;
+    margin-top: -40px;
+    margin-left: 400px;
+    font-weight: 500;
+    font-family: 'Cherry Cream Soda';
+}
+
+#home  p:hover{
+    color: #ffffff;
+    transition: 0.4s ease-in-out;
+}
+
+.Btn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(27, 27, 27);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    transition-duration: .3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.11);
+    
+  }
+  
+  .svgIcon {
+    fill: rgb(178, 196, 255);
+  }
+  
+  .icon2 {
+    width: 18px;
+    height: 5px;
+    border-bottom: 2px solid rgb(143, 160, 255);
+    border-left: 2px solid rgb(80, 69, 238);
+    border-right: 2px solid rgb(182, 143, 255);
+  }
+  
+  .tooltip {
+    position: absolute;
+    right: -175px;
+    opacity: 0;
+    background-color: rgb(13, 92, 182);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: .2s;
+    pointer-events: none;
+    letter-spacing: 0.5px;
+    
+  }
+  
+  .tooltip::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: rgb(150, 212, 236);
+    background-size: 1000%;
+    background-position: center;
+    transform: rotate(45deg);
+    left: -5%;
+    transition-duration: .3s;
+  }
+  
+  .Btn:hover .tooltip {
+    opacity: 1;
+    transition-duration: .3s;
+  }
+  
+  .Btn:hover {
+    background-color: rgb(94, 145, 255);
+    transition-duration: .3s;
+  }
+  
+  .Btn:hover .icon2 {
+    border-bottom: 2px solid rgb(235, 235, 235);
+    border-left: 2px solid rgb(235, 235, 235);
+    border-right: 2px solid rgb(235, 235, 235);
+  }
+  
+  .Btn:hover .svgIcon {
+    fill: rgb(255, 255, 255);
+    animation: slide-in-top 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  
+  @keyframes slide-in-top {
+    0% {
+      transform: translateY(-10px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  
+
+
+
+#home h6{
+    font-size: 20px;
+    color: #d6d6d6;
+    margin-bottom: 10px;
+    margin-left: 40px;
+}
+
+.Download-button {
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 12px 20px;
+    color: white;
+    background: rgb(22, 119, 211);
+    border: none;
+    box-shadow: 0 0.7em 1.5em -0.5em rgba(59, 48, 78, 0.527);
+    letter-spacing: 0.05em;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    margin-left: 600px;
+    margin-top: 40px;
+  }
+  
+  .Download-button svg {
+    margin-right: 8px;
+    width: 25px;
+  }
+  
+  .Download-button:hover {
+    box-shadow: 0 0.5em 1.5em -0.5em rgba(179, 195, 240, 0.627);
+  }
+  
+  .Download-button:active {
+    box-shadow: 0 0.3em 1em -0.5em rgba(147, 188, 248, 0.627);
+  }
+  
+  .Download-button::before {
+    content: "";
+    width: 4px;
+    height: 40%;
+    background-color: white;
+    position: absolute;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    left: 0;
+    transition: all 0.2s;
+  }
+  
+  .Download-button::after {
+    content: "";
+    width: 4px;
+    height: 40%;
+    background-color: white;
+    position: absolute;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    right: 0;
+    transition: all 0.2s;
+  }
+  
+  .Download-button:hover::before,
+  .Download-button:hover::after {
+    height: 60%;
+  }
+  
+
+#projects{
+    text-align: center;
+    background-color: #ffffff;
+    margin-top: 50px;
+    
+    
+}
+
+#projects .pro-container{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 0 80px;
+    padding-top: 20px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.1rem;
+}
+
+#projects .pro{
+    width: 20%;
+    padding: 10px 12px;
+    border: 1px solid #e3e3e3;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 1px 1px 14px rgba(168, 225, 181, 0.227);
+    margin: 15px 0;
+    justify-content: space-evenly;
+    background-color: #fff;
+    border: 1px solid #1a1a1a;
+    
+}
+
+#projects .pro:hover{
+    box-shadow: 1px 1px 16px rgba(32, 143, 235, 0.678);
+    transition: 0.2s ease;
+}
+
+#projects .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+#projects .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+
+
+
+#projects .pro .des h6 {
+    padding-top: 7px;
+    color: #073572;
+    font-size: 14px;
+    font-weight: 700;
+    opacity: 0; /* Initially hide the percentage */
+    transition: opacity 0.3s ease; /* Add transition for smooth effect */
+}
+
+#projects .pro:hover .des h6 {
+    opacity: 1; /* Show the percentage when hovering over the skill icon */
+}
+
+#projects .pro .des h5{
+    padding-top: 7px;
+    color: #010101;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#skills{
+    text-align: center;
+    background-color: #ffffff;
+    margin-top: 100px;
+    
+}
+
+#skills .pro-container{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 0 20px;
+    padding-top: 20px;
+    justify-content: space-evenly;
+    
+}
+
+#skills .pro{
+    width: 85px;
+    min-width: 10px;
+    padding: 5px 12px;
+    padding-top: 10px;
+    border: 1px solid #e3e3e3;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px rgba(168, 225, 181, 0.227);
+    margin: 15px 0;
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #1a1a1a;
+    
+    
+}
+
+#skills .pro:hover{
+    box-shadow: 1px 1px 16px rgba(32, 143, 235, 0.678);
+    transition: 0.2s ease;
+}
+
+#skills .pro i{
+    width: 100%;
+    border-radius: 20px;
+    font-size: 34px;
+}
+
+#skills .pro .des{
+    padding: 10px 0;
+    text-align: center;
+}
+
+#skills .pro .des h6{
+    padding-top: 7px;
+    color: #044570;
+    font-size: 18px;
+    
+}
+
+#skills .pro .des h5{
+    padding-top: 7px;
+    color: #010101;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+#skills .pro .des h6{
+    padding-top: 7px;
+    color: #010101;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+#skills .pro .des h6 {
+    padding-top: 7px;
+    color: #0a2e72;
+    font-size: 12px;
+    font-weight: 700;
+    opacity: 0; /* Initially hide the percentage */
+    transition: opacity 0.3s ease; /* Add transition for smooth effect */
+}
+
+#skills .pro:hover .des h6 {
+    opacity: 1; 
+    
+}
+
+
+
