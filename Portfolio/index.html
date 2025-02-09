@@ -3,217 +3,322 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
-    <link rel="icon" type="x-image" href="path/to/favicon.ico">
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <title>Portfolio</title>
+
 </head>
 <body>
     <nav>
-        <a href="#" class="logo">
-            SMdev
-        </a>
-        <div class="links">
-            <a class="active" href="#home">Home</a>
-            <a class="nav-link" href="#projects">Projects</a>
-            <a class="nav-link" href="#skills">Skills</a>
-            <a class="nav-link" href="#about">About</a>
-            <a class="nav-link" href="#contact">Contact</a>
-            <a class="nav-link" href="profile.html">Profile</a>
-            <button class="Btn">
-                <svg class="svgIcon" viewBox="0 0 384 512" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path></svg>
-                <span class="icon2"></span>
-                <span class="tooltip">Download Resume</span>
-             </button>
+        <div class="logo">
+            <a href="#">Srikar Miriyala</a>
         </div>
-       
+        <div class="navbar">
+            <a href="#work">Work</a>
+            <a href="#tools">Tools</a>
+            <a href="#skills">Skills</a>
+            <a href="#Testimonials">Testimonials</a>
+            <a href="#about">about</a>
+        </div>
+        <div class="button-container">
+            <a href="#contact">
+                <button>Message me !</button>
+            </a>
+        </div>
     </nav>
 
-    <section id="home">
-        <h4>Srikar Miriyala</h4>
+    <div class="container">
+        <p>Hi, I'm Srikar 👋  </p>
         
-        <p>UI/UX | App Developer | Editor | Designer</p>
-        <button class="Download-button">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="16"
-              width="20"
-              viewBox="0 0 640 512"
-            >
-              <path
-                d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-167l80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-39 39V184c0-13.3-10.7-24-24-24s-24 10.7-24 24V318.1l-39-39c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z"
-                fill="white"
-              ></path>
-            </svg>
-            <span>Resume</span>
-          </button>
-          
-    </section>
+        <h1>Where Machine Learning, web dev, and design create innovation.</h1>
+        <div class="button-container">
+            <a href="#work">
+                <button>Download Resume</button>
+            </a>
+        </div>  
+    </div>
+    <div class="scontainer">
+        <span>My Works 💼</span>
+    </div>
+<!-- Work Section Slider -->
+<div class="slider-container">
+    
+    <!-- Slide 1 -->
+    <div class="slide active">
+        <h3 class="project-title">farmconnect</h3>
+        <div class="role">UI Design - App Development</div>
+        <h1 class="project-description">WebApp to connect<br>farmers and users</h1>
+        <div class="button-group">
+            <button class="slide-button primary-btn">Case Study</button>
+            <button class="slide-button secondary-btn">Visit App</button>
+        </div>
+    </div>
 
-    <section id="projects" class="section-p1">
-        <h2>My Projects</h2>
-        <p>hover on the cards to the know the type !</p>
-        <div class="pro-container">
-            <div class="pro">
-                <img src="/assets/web.png" width="10" height="200">
-                <div class="des">
-                    <h5>farmconnect</h5>
-                    <h6>E-commerce website</h6>
-                </div>
+    <!-- Slide 2 -->
+    <div class="slide">
+        <h3 class="project-title">MediLink</h3>
+        <div class="role">Database - Web Development</div>
+        <h1 class="project-description">Synchronization of<br>Medical History</h1>
+        <div class="button-group">
+            <button class="slide-button primary-btn">Case Study</button>
+            <button class="slide-button secondary-btn">Visit App</button>
+        </div>
+    </div>
+
+    <div class="slide">
+        <h3 class="project-title">UniAI</h3>
+        <div class="role">Machine Learning - Web Development</div>
+        <h1 class="project-description">Chatbot to streamline <br>admission process</h1>
+        <div class="button-group">
+            <button class="slide-button primary-btn">Case Study</button>
+            <button class="slide-button secondary-btn">Visit App</button>
+        </div>
+    </div>
+
+    <div class="slide">
+        <h3 class="project-title">StockTrend</h3>
+        <div class="role">Machine Learning - Time Series Analysis</div>
+        <h1 class="project-description">Synchronization of<br>Medical History</h1>
+        <div class="button-group">
+            <button class="slide-button primary-btn">Case Study</button>
+            <button class="slide-button secondary-btn">Visit App</button>
+        </div>
+    </div>
+
+    <!-- Navigation Controls -->
+    <div class="slider-arrow arrow-left">←</div>
+    <div class="slider-arrow arrow-right">→</div>
+    <div class="slider-navigation">
+        <div class="nav-dot active"></div>
+        <div class="nav-dot"></div>
+    </div>
+</div>
+    <div class="header">
+        <span>My favorite tools 🔧</span>
+        <h1>These are the tools I use everyday</h1>
+    </div>
+    <div class="tools-container">
+        <div class="tool-card">
+            <div class="tool-icon">
+                <img src="/Assests/Figma.png" alt="Figma">
             </div>
-            <div class="pro">
-                <img src="/assets/Screenshot 2024-05-16 134407.png" width="10" height="200">
-                <div class="des">
-                    <h5>farmconnect App</h5>
-                    
-                    <h6>E-commerce application</h6>
-                </div>
+            <div class="tool-title">Figma</div>
+            <div class="tool-description">UX/UI Design & Prototyping</div>
+        </div>
+        <div class="tool-card">
+            <div class="tool-icon">
+                <img src="/Assests/vscode.png" alt="vscode">
             </div>
-            <div class="pro">
-                <img src="/assets/rp.png" width="10" height="200">
-                <div class="des">
-                    <h5>Registration pages</h5>
-                    
-                    <h6>Website</h6>
-                </div>
+            <div class="tool-title">VS Code</div>
+            <div class="tool-description">IDE for development</div>
+        </div>
+        <div class="tool-card">
+            <div class="tool-icon">
+                <img src="/Assests/github.png" alt="github">
             </div>
-            <div class="pro">
-                <img src="/assets/port.png" width="10" height="200">
-                <div class="des">
-                    <h5>portfolio</h5>
-                    <h6>Website</h6>
-                </div>
+            <div class="tool-title">Git Hub</div>
+            <div class="tool-description">Version Control</div>
+        </div>
+        <div class="tool-card">
+            <div class="tool-icon">
+                <img src="/Assests/notion.png" alt="Notion">
             </div>
-            <div class="pro">
-                <img src="/assets/web.png" width="10" height="200">
-                <div class="des">
-                    <h5>farmconnect</h5>
-                    <h6>E-commerce website</h6>
-                </div>
+            <div class="tool-title">Notion</div>
+            <div class="tool-description">Scheduling and Manging</div>
+        </div>
+        <div class="tool-card">
+            <div class="tool-icon">
+                <img src="/Assests/arc.png" alt="Arc">
             </div>
-            <div class="pro">
-                <img src="/assets/Screenshot 2024-05-16 134407.png" width="10" height="200">
-                <div class="des">
-                    <h5>farmconnect App</h5>
-                    
-                    <h6>E-commerce application</h6>
-                </div>
+            <div class="tool-title">Arc</div>
+            <div class="tool-description">Preview and Testing</div>
+        </div>
+        <div class="tool-card">
+            <div class="tool-icon">
+                <img src="/Assests/whatsapp.png" alt="whatsapp">
             </div>
-            <div class="pro">
-                <img src="/assets/rp.png" width="10" height="200">
-                <div class="des">
-                    <h5>Registration pages</h5>
-                    
-                    <h6>Website</h6>
-                </div>
-            </div>
-            <div class="pro">
-                <img src="/assets/port.png" width="10" height="200">
-                <div class="des">
-                    <h5>portfolio</h5>
-                    <h6>Website</h6>
-                </div>
+            <div class="tool-title">WhatsApp</div>
+            <div class="tool-description">Communication</div>
+        </div>
+    </div>
+
+    <div class="skills-section">
+        <div class="header">
+        <span>Ways of working 💡</span>
+        <h1>Skills that I use to create<br> world-class products</h1>
+        </div>
+        <div class="skills-container">
+        <div class="skill-card">
+            <div class="icon"><img src="/Assests/ux.svg" alt="UX Design"></div>
+            <div class="info">
+            <h3>UX Design</h3>
+            <p>From wireframes to user journeys, I utilize various UX techniques to deliver world-class experience.</p>
             </div>
         </div>
-    </section>
-
-
-    <section id="skills" class="section-p1">
-        <h2>My Skills</h2>
-        <p>hover on the cards to the know the knowledge I have in them ! </p>
-        <div class="pro-container">
-            <div class="pro">
-                <i class='bx bxl-html5' style='color:#f9660b'  ></i>
-                <div class="des">
-                    <h5>HTML</h5>
-                    <h6>84%</h6>
-                    
-                </div>
-            </div>
-            <div class="pro">
-                <i class='bx bxl-css3' style='color:#0b6df9'  ></i>                <div class="des">
-                    <h5>CSS</h5>
-                    <h6>82%</h6>
-                    
-                </div>
-            </div>
-            <div class="pro">
-                <i class='bx bxl-python' style='color:#bbb710'  ></i>
-                <div class="des">
-                    <h5>Python</h5>
-                    <h6>76%</h6>
-                   
-                </div>
-            </div>
-            <div class="pro">
-                <i class='bx bxl-javascript' style='color:#ece715'  ></i>
-                <div class="des">
-                    <h5>Javascript</h5>
-                    <h6>61%</h6>
-                </div>
-            </div>
-            <div class="pro">
-                <i class='bx bxl-java' style='color:#ec3f15'  ></i>
-                <div class="des">
-                    <h5>Java</h5>
-                    <h6>36%</h6>
-                </div>
-            </div>
-            <div class="pro">
-                <i class='bx bxl-figma' undefined ></i>
-                <div class="des">
-                    <h5>Figma</h5>
-                    <h6>94%</h6>
-                </div>
-            </div>
-            <div class="pro">
-                <i class='bx bxl-android' style='color:#0eb72b'  ></i>
-                <div class="des">
-                    <h5>Android</h5>
-                    <h6>68%</h6>
-                </div>
-            </div>
-            <div class="pro">
-                <i class='bx bxl-react' style='color:#3a98e2'  ></i>
-                <div class="des">
-                    <h5>React JS</h5>
-                    <h6>38%</h6>
-                </div>
-            </div>
-            <div class="pro">
-                <i class='bx bxl-postgresql' style='color:#0e6db7'  ></i>
-                <div class="des">
-                    <h5>SQL</h5>
-                    <h6>64%</h6>
-                </div>
-            </div>
-            <div class="pro">
-                <i class='bx bxl-mongodb' style='color:#17b70e'  ></i>
-                <div class="des">
-                    <h5>Mongodb</h5>
-                    <h6>71%</h6>
-                </div>
-            </div>
-            <div class="pro">
-                <i class='bx bxl-visual-studio' style='color:#3a98e2' ></i>
-                <div class="des">
-                    <h5>VS Code</h5>
-                    <h6>95%</h6>
-                </div>
-            </div>
-            <div class="pro">
-                <i class='bx bxl-github' style='color:#050f16'  ></i>
-                <div class="des">
-                    <h5>Github</h5>
-                    <h6>97%</h6>
-                </div>
+        <div class="skill-card">
+            <div class="icon" ><img src="/Assests/ui.svg" alt="UI Design"></div>
+            <div class="info">
+            <h3>UI Design</h3>
+            <p>To make outstanding UX work, it still needs polished visual design.</p>
             </div>
         </div>
-    </section>
-    <script src="script.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-<script src="script.js"></script>
+        <div class="skill-card">
+            <div class="icon" "><img src="/Assests/slider.svg" alt="Web Development"></div>
+            <div class="info">
+            <h3>Web Development</h3>
+            <p>I create interactive surveys, hold user interviews, and follow user data to find out what works and what not.</p>
+            </div>
+        </div>
+        <div class="skill-card">
+            <div class="icon" ><img src="/Assests/manufacturing.svg" alt="Prototyping"></div>
+            <div class="info">
+            <h3>Prototyping</h3>
+            <p>I build prototypes to quickly gather more feedback about products.</p>
+            </div>
+    </div>
+        <div class="skill-card">
+            <div class="icon" ><img src="/Assests/workshop.svg" alt="Workshops"></div>
+            <div class="info">
+            <h3>Workshops</h3>
+            <p>I conduct workshops to come up with new ideas and to promote cross-functional ideation.</p>
+            </div>
+        </div>
+        <div class="skill-card">
+            <div class="icon" ><img src="/Assests/collaboration.svg" alt="Collaboration"></div>
+            <div class="info">
+            <h3>Collaboration</h3>
+            <p>I bring positive energy to teams I work in and can communicate effectively about decisions we need to make.</p>
+            </div>
+        </div>
+        </div>
+    </div>
 
+    <div class="header1">
+        <div class="title-container">
+        <div class="title">
+            Testimonials ✨
+        </div>
+        </div>
+        <h1>Don't believe me - hear it<br>from the others</h1>
+    </div>
+    
+    <div class="testimonials-grid">
+        <div class="testimonial">
+        <p class="quote">"Working with Jeff was an absolute game-changer for our company. Their keen eye for detail and innovative approach to product design elevated our brand to new heights."</p>
+        <p class="author">-Jennifer R. - CEO Techstart</p>
+        </div>
+    
+        <div class="testimonial">
+        <p class="quote">"Their creativity knows no bounds, and their designs have helped us differentiate ourselves in a competitive market. From concept to execution, Jeff exceeded our expectations at every step of the way."</p>
+        <p class="author">-Jennifer R. - CEO Techstart</p>
+        </div>
+    
+        <div class="testimonial">
+        <p class="quote">"Their creativity knows no bounds, and their designs have helped us differentiate ourselves in a competitive market. From concept to execution, Jeff exceeded our expectations at every step of the way."</p>
+        <p class="author">-Jennifer R. - CEO Techstart</p>
+        </div>
+    
+        <div class="testimonial">
+        <p class="quote">"Working with Jeff was an absolute game-changer for our company. Their keen eye for detail and innovative approach to product design elevated our brand to new heights."</p>
+        <p class="author">-Jennifer R. - CEO Techstart</p>
+        </div>
+    </div>
+
+
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.nav-dot');
+        const leftArrow = document.querySelector('.arrow-left');
+        const rightArrow = document.querySelector('.arrow-right');
+        let currentSlide = 0;
+    
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+            
+            currentSlide = (index + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+            dots[currentSlide].classList.add('active');
+        }
+    
+        leftArrow.addEventListener('click', () => {
+            showSlide(currentSlide - 1);
+        });
+    
+        rightArrow.addEventListener('click', () => {
+            showSlide(currentSlide + 1);
+        });
+    
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                showSlide(index);
+            });
+        });
+    
+        Optional: Auto-play
+        setInterval(() => {
+            showSlide(currentSlide + 1);
+        }, 5000);
+    </script>
+
+    <footer class="footer">
+        <div class="footer-content">
+        <div class="footer-section">
+            <h2>Follow me on other channels</h2>
+            <div class="social-links">
+            <a href="#" class="social-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" />
+                <path d="M16 8l-8 8M8 8l8 8" />
+                </svg>
+                Youtube
+            </a>
+            <a href="#" class="social-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+                </svg>
+                Twitter/X
+            </a>
+            <a href="#" class="social-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" />
+                <path d="M16 8a6 6 0 0 1-7.5 6H7v4.5L3.5 14H7a6 6 0 0 1 7.5-6" />
+                </svg>
+                LinkedIn
+            </a>
+            </div>
+        </div>
+    
+        <div class="footer-section">
+            <h2>Navigation</h2>
+            <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Work</a>
+            <a href="#">Tools</a>
+            <a href="#">Skills</a>
+            <a href="#">Education</a>
+            <a href="#">About me</a>
+            </div>
+        </div>
+    
+        <div class="footer-section">
+            <h2>Case studies</h2>
+            <div class="case-links">
+            <a href="#">App Project</a>
+            <a href="#">App Project 2</a>
+            <a href="#">Desktop Project</a>
+            <a href="#">Desktop Project 2</a>
+            </div>
+        </div>
+        </div>
+    
+        <div class="footer-bottom">
+        <div class="copyright">© 2025 — Srikar Miriyala</div>
+        <div class="legal-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Cookies</a>
+            <a href="#">Terms & Conditions</a>
+        </div>
+        </div>
+    </footer
 </body>
 </html>
